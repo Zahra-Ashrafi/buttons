@@ -1,0 +1,336 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+body {
+	background: #FFF url('../img/bg.png'); font-family: 'Oxygen', sans-serif;
+}
+
+#ziwrap #extended {width:100%; height:225px;margin-top:150px; background-color:#e3e3e3; margin-left:-10px; padding-left:10px; padding-top:20px; margin-bottom:10px;}
+
+#ziwrap #extended i {text-align:center;}
+
+#ziwrap #extended h4 {color:#666; margin-top:0px; text-align:center;}
+
+#ziwrap {width:790px; min-height:625px; margin:10px auto; background-color:#F2F3F4; padding:25px; border-bottom:#E52B50 solid 10px; padding:10px; padding-right:0px;}
+
+#ziwrap a {text-decoration:none; color:#FFF;}
+
+/*** BUTTON CODE STARTS (COMMON FOR ALL BUTTONS) ***/
+
+#ziwrap input {display:none;}
+
+#zibutton label {cursor:pointer;}
+
+#zibutton {width:240px; height:50px; float:left; margin-right:10px; cursor:pointer; padding:5px; box-shadow:0px 2px 2px #999; border:1px solid #ccc; border-radius:5px;  -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out; margin-bottom:10px; background: #eeeeee; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2NjY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
+}
+
+#zibutton i {color:#E52B50; font-size:40px; float:left; margin-right:5px; line-height:50px; display:block; width:50px; height:50px; text-shadow:0px 0px 1px #333; text-align:center;}
+#zibutton span {font-weight:bold; color:#666; font-size:14px; line-height:30px;}
+
+#zibutton p {color:#666; font-size:10px; line-height:0px;}
+
+#zibutton:hover {background: #cccccc; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #cccccc 0%, #eeeeee 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #cccccc 0%,#eeeeee 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-8 */
+}
+
+/*** BUTTON CODE ENDS ***/
+
+
+/*** PROGRESS FOR BUTTON - 1 ***/
+
+#progress1 {width:50px; height:50px; float:right; border:5px dotted #999; border-radius:50%; box-sizing: border-box;}
+
+#zidown1:checked ~ #zibutton #progress1 {-webkit-animation: zianimation 1s infinite linear; -moz-animation: zianimation 1s infinite linear; -o-animation: zianimation 1s infinite linear; -ms-animation: zianimation 1s infinite linear; animation: zianimation 1s infinite linear;}
+
+@-webkit-keyframes zianimation { 
+from {border:7px dotted #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg);}
+to {border:7px dotted #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@-moz-keyframes zianimation { 
+from {border:7px dotted #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg);}
+to {border:7px dotted #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@-o-keyframes zianimation { 
+from {border:7px dotted #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg);}
+to {border:7px dotted #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@-ms-keyframes zianimation { 
+from {border:7px dotted #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg);}
+to {border:7px dotted #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@keyframes zianimation { 
+from {border:7px dotted #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg);}
+to {border:7px dotted #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+/*** PROGRESS FOR BUTTON - 2 ***/
+
+#progress2 {width:50px; height:50px; float:right; border:5px solid #999; border-radius:50%; box-sizing: border-box;}
+
+#zidown2:checked ~ #zibutton #progress2 {-webkit-animation: zianimation1 1s infinite linear; -moz-animation: zianimation1 1s infinite linear; -o-animation: zianimation1 1s infinite linear; -ms-animation: zianimation1 1s infinite linear; animation: zianimation1 1s infinite linear;}
+
+@-webkit-keyframes zianimation1 { 
+from {border:5px dashed #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg); box-shadow:0px 0px 10px #333; background-color:#333;}
+to {border:12px solid #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@-moz-keyframes zianimation1 { 
+from {border:5px dashed #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg); box-shadow:0px 0px 10px #333; background-color:#333;}
+to {border:12px solid #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@-o-keyframes zianimation1 { 
+from {border:5px dashed #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg); box-shadow:0px 0px 10px #333; background-color:#333;}
+to {border:12px solid #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@-ms-keyframes zianimation1 { 
+from {border:5px dashed #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg); box-shadow:0px 0px 10px #333; background-color:#333;}
+to {border:12px solid #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+@keyframes zianimation1 { 
+from {border:5px dashed #E52B50; -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ms-transform:rotate(0deg); transform:rotate(0deg); box-shadow:0px 0px 10px #333; background-color:#333;}
+to {border:12px solid #E52B50; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg); -ms-transform:rotate(360deg); transform:rotate(360deg);}
+	
+}
+
+/*** PROGRESS FOR BUTTON - 3 ***/
+
+#progress3 {width:50px; height:50px; float:right; text-align:center; background-color:#e6e6e6; border:1px solid #999; border-radius:50%; box-sizing: border-box; text-shadow:0px 0px 0px #333;}
+
+#progress3 i {font-size:40px; line-height:50px; color:#333; margin-left:-2px;}
+
+#zidown3:checked ~ #zibutton #progress3 i {-webkit-animation: zianimation3 1s infinite linear; -moz-animation: zianimation3 1s infinite linear; -o-animation: zianimation3 1s infinite linear; -ms-animation: zianimation3 1s infinite linear; animation: zianimation3 1s infinite linear;}
+
+@-webkit-keyframes zianimation3 { 
+from {-webkit-transform:rotateX(0deg); color:#333;}
+to {-webkit-transform:rotateY(360deg); color:#FFF;}
+}
+
+@-moz-keyframes zianimation3 { 
+from {-moz-transform:rotateX(0deg); color:#333;}
+to {-moz-transform:rotateY(360deg); color:#FFF;}
+}
+
+@-o-keyframes zianimation3 { 
+from {-o-transform:rotateX(0deg); color:#333;}
+to {-o-transform:rotateY(360deg); color:#FFF;}
+}
+
+@-ms-keyframes zianimation3 { 
+from {-ms-transform:rotateX(0deg); color:#333;}
+to {-ms-transform:rotateY(360deg); color:#FFF;}
+}
+
+@keyframes zianimation3 { 
+from {-transform:rotateX(0deg); color:#333;}
+to {-transform:rotateY(360deg); color:#FFF;}
+}
+
+
+/*** PROGRESS FOR BUTTON - 4 ***/
+
+#progress4 {width:50px; height:50px; float:right; overflow:hidden; text-align:center; border:1px solid #999; background: #cccccc; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #cccccc 0%, #eeeeee 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #cccccc 0%,#eeeeee 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #cccccc 0%,#eeeeee 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-8 */}
+
+#progress4 i {color:#999;}
+
+#zidown4:checked ~ #zibutton #progress4 i {-webkit-animation: zianimation4 0.7s infinite linear; -moz-animation: zianimation4 0.7s infinite linear; -o-animation: zianimation4 0.7s infinite linear; -ms-animation: zianimation4 0.7s infinite linear; animation: zianimation4 0.7s infinite linear;}
+
+@-webkit-keyframes zianimation4 { 
+from {border:3px dashed #E52B50; -webkit-transform:translateY(-40px); color:#E52B50; }
+to {border:3px solid #E52B50; -webkit-transform:translateY(43px);color:#E52B50;}
+	
+}
+
+@-moz-keyframes zianimation4 { 
+from {border:3px dashed #E52B50; -moz-transform:translateY(-40px); color:#E52B50; }
+to {border:3px solid #E52B50; -moz-transform:translateY(43px);color:#E52B50;}
+	
+}
+
+@-o-keyframes zianimation4 { 
+from {border:3px dashed #E52B50; -o-transform:translateY(-40px); color:#E52B50; }
+to {border:3px solid #E52B50; -o-transform:translateY(43px);color:#E52B50;}
+	
+}
+
+@-ms-keyframes zianimation4 { 
+from {border:3px dashed #E52B50; -ms-transform:translateY(-40px); color:#E52B50; }
+to {border:3px solid #E52B50; -ms-transform:translateY(43px);color:#E52B50;}
+	
+}
+
+@keyframes zianimation4 { 
+from {border:3px dashed #E52B50; transform:translateY(-40px); color:#E52B50; }
+to {border:3px solid #E52B50; transform:translateY(43px);color:#E52B50;}
+	
+}
+
+/*** PROGRESS FOR BUTTON - 5 ***/
+
+#progress5 {width:0px; height:2px; box-sizing: border-box; background-color:#E52B50; margin-top:-1px; transition: all 3s ease-in-out;}
+
+#zidown5:checked ~ #zibutton #progress5 {width:240px;}
+
+
+/*** PROGRESS FOR BUTTON - 6 ***/
+
+#progress6 {width:50px; height:50px; float:right; text-align:center; background-color:#e6e6e6; border:1px solid #999; border-radius:50%; box-sizing: border-box; text-shadow:0px 0px 0px #333;}
+
+#progress6 i {font-size:40px; line-height:50px; color:#333; margin-left:-2px;}
+
+#zidown6:checked ~ #zibutton #progress6 i {-webkit-animation: zianimation5 0.5s infinite linear; -moz-animation: zianimation5 0.5s infinite linear; -o-animation: zianimation5 0.5s infinite linear; -ms-animation: zianimation5 0.5s infinite linear; animation: zianimation5 0.5s infinite linear;}
+
+@-webkit-keyframes zianimation5 { 
+from {-webkit-transform:rotate(0deg);}
+to {-webkit-transform:rotate(360deg);}
+}
+
+@-moz-keyframes zianimation5 { 
+from {-moz-transform:rotate(0deg);}
+to {-moz-transform:rotate(360deg);}
+}
+
+@-o-keyframes zianimation5 { 
+from {-o-transform:rotate(0deg);}
+to {-o-transform:rotate(360deg);}
+}
+
+@-ms-keyframes zianimation5 { 
+from {-ms-transform:rotate(0deg);}
+to {-ms-transform:rotate(360deg);}
+}
+
+@keyframes zianimation5 { 
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+/*** PROGRESS FOR BUTTON - 7 ***/
+
+#progress7 {width:240px; height:90px; opacity:0; float:left; background-color:#e6e6e6; border:1px solid #bbb; box-sizing: border-box; text-shadow:0px 0px 0px #333; margin:7px auto; font-size:12px; padding:5px; box-shadow:0px 5px 10px #ccc; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress7 i {font-size:30px; line-height:40px; color:#333; margin-right:-15px; float:right;}
+
+#progress7 div {text-align:center; width:100%; height:20px; font-size:12px; background-color:#666; padding:5px; margin-left:-5px; margin-top:3px; font-weight:bold; line-height:20px; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress7 div:hover {background-color:#E52B50;}
+
+#zidown7:checked ~ #zibutton #progress7 {opacity:1;}
+
+
+/*** PROGRESS FOR BUTTON - 8 ***/
+
+#progress8 {width:240px; height:90px; opacity:0; text-align:center; float:left; background-color:#e6e6e6; border:1px solid #bbb; box-sizing: border-box; text-shadow:0px 0px 0px #333; margin:7px auto; font-size:12px; padding:5px; box-shadow:0px 5px 10px #ccc; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress8 div {text-align:center; width:100%; height:40px; font-size:12px; background-color:#ccc; padding:5px; margin-left:-5px; margin-top:5px; font-weight:bold; line-height:20px; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress8 div i {font-size:25px; line-height:40px; color:#333; display:block; width:22.60%; height:40px; text-align:center; float:left; margin-left:0px; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+
+
+#progress8 div i:nth-child(1) {background-color:#06C; color:#FFF;}
+#progress8 div i:nth-child(2) {background-color:#F00; color:#FFF;}
+#progress8 div i:nth-child(3) {background-color:#0CF; color:#FFF;}
+#progress8 div i:nth-child(4) {background-color:#F00; color:#FFF;}
+
+#progress8 div i:nth-child(1):hover {background-color:#333;}
+#progress8 div i:nth-child(2):hover {background-color:#333;}
+#progress8 div i:nth-child(3):hover {background-color:#333;}
+#progress8 div i:nth-child(4):hover {background-color:#333;}
+
+
+#zidown8:checked ~ #zibutton #progress8 {opacity:1;}
+
+
+/*** PROGRESS FOR BUTTON - 9 ***/
+
+#progress9 {width:240px; height:40px; opacity:0; text-align:center; float:left; background-color:#E52B50;box-sizing: border-box; margin:7px auto; font-size:20px; font-weight:bold; padding:5px; box-shadow:0px 5px 10px #333; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#zidown9:checked ~ #zibutton #progress9 {opacity:1;}
+
+#progress9:hover {background-color:#333;}
+
+
+/*** PROGRESS FOR BUTTON - 10 ***/
+
+#progress10 {width:240px; height:150px; opacity:0; float:left; background-color:#e6e6e6; border:1px solid #bbb; box-sizing: border-box; text-shadow:0px 0px 0px #333; margin:7px auto; font-size:12px; padding:5px; box-shadow:0px 5px 10px #ccc; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress10 i {font-size:30px; line-height:40px; color:#333; margin-right:-15px; float:right;}
+
+#progress10 div {text-align:center; width:100%; height:20px; font-size:12px; background-color:#666; padding:5px; margin-left:-5px; margin-top:3px; font-weight:bold; line-height:20px; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress10 div:hover {background-color:#E52B50;}
+
+#progress10 input {display:block; float:left;} 
+#progress10 label {display:block; line-height:22px; margin-left:30px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+#progress10 label:hover {color:#E52B50; font-weight:bold;}
+
+#progress10 p {font-size:12px; text-align:center;}
+#progress10 p a{color:#333;}
+#progress10 p a:hover {color:#E52B50;}
+
+#zidown10:checked ~ #zibutton #progress10 {opacity:1;}
+
+
+/*** PROGRESS FOR BUTTON - 11 ***/
+
+#progress11 {width:240px; height:125px; opacity:0; text-align:center; float:left; background-color:#e6e6e6;box-sizing: border-box; margin:7px auto; font-size:12px; padding:5px; box-shadow:0px 5px 10px #333; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress11 input[type="text"] {display:block; border:1px solid #d6d6d6; margin-top:5px; width:89%; padding:5%; color:#999;}
+#progress11 input[type="submit"] {display:block; border:1px solid #d6d6d6; margin-top:5px; width:100%; padding:5%; color:#FFF; background-color:#E52B50; cursor:pointer; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress11 input[type="submit"]:hover {background-color:#333;}
+
+#zidown11:checked ~ #zibutton #progress11 {opacity:1;}
+
+
+/*** PROGRESS FOR BUTTON - 12 ***/
+
+#progress12 {width:240px; height:90px; opacity:0; float:left; background-color:#e6e6e6;box-sizing: border-box; margin:7px auto; font-size:12px; padding:5px; box-shadow:0px 5px 10px #333; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress12 p {float:right; width:150px; height:80px; line-height:80px; font-size:20px; background-color:#333; margin-top:0px; display:block; text-align:center; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; transition: all .3s ease-in-out;}
+
+#progress12 p:hover { background-color:#E52B50;}
+
+#zidown12:checked ~ #zibutton #progress12 {opacity:1;}
